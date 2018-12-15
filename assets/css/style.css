@@ -1,0 +1,10 @@
+/* body {
+   
+    background-repeat: no-repeat;
+} */
+
+.animalButton {
+    background-color: black;
+    color: white;
+    padding: .5em;
+}

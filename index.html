@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>GiphyAPI</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body background="assets/images/background.png">
   <div id="buttons">
 
   </div>
@@ -47,6 +48,9 @@
     });
 
     $(document).on("click", ".animalButton", function() {
+
+      $("#gifs-appear-here").html("");
+
         var animal = $(this).attr("data-animal");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
           animal + "&api_key=CYXUGNy9HyjUzVCWbDEwmQFKKBTvHWC9&limit=10";
